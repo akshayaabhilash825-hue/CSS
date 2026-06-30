@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(153, 233, 249);
+        }
+        p::first-letter{
+            font-size: x-large;
+            color: red;
+        }
+        p::first-line{
+            font-weight: bold;
+        }
+        blockquote::before {
+      content: "“";
+      font-size: 30px;
+      color: #555;
+      position: absolute;
+      left: -15px;
+      top: -5px;
+    }
+    a.link{
+        color:green;
+    }
+    a.visited{
+        color: deeppink;
+    }
+    a.hover{
+        color:darkkhaki;
+    }
+    .heading{
+        display: flex;
+        gap: 20px;
+        margin: 20px;
+    }
+    .h4{
+        color:deeppink;
+    }
+    blockquote {
+      margin: 20px;
+      padding: 10px;
+      background: #eee;
+      border-left: 5px solid #999;
+      font-style: italic;
+      position: relative;
+    }
+    .Football {
+      background-image: url("https://img.magnific.com/premium-photo/football-soccer-theme-background-with-big-light-blue-ball_641503-15543.jpg");
+      padding: 20px;
+      border: 1px solid #ccc;
+      max-width: 700px;
+      margin: 10px auto;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="Football">
+    <h2> FOOTBALL: MORE THAN A GAME</h2>
+    <div class="author">  By Sports Enthusiast Persona </div>
+    <p> Football is passion, teamwork, and strategy rolled into ninety minutes. 
+    It unites fans across cultures, creating unforgettable moments both on 
+    and off the field.</p>
+    <blockquote> Football is the ballet of the masses.</blockquote>
+    <p>Check more about <a href="Football"> Football</a></p>
+    <div class="heading">
+        <h4> Beyond the Scoreboard</h4>
+        <h4 class="h4">Passion on the Field</h4>
+    </div></div>
+</body>
+</html>
