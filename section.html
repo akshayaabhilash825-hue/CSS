@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Blog Section</title>
+  <style>
+    body{
+        background-color: rgb(158, 157, 155);
+    }
+    
+    .blog-section {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      background-color: grey;
+    }
+
+    .blog-post {
+      border: 1px solid #ccc;
+      padding: 15px;
+      width: 30%;
+    }
+
+    .blog-post h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+   
+    a[href^="https"] {
+      color: red;
+      font-weight: bold;
+    }
+
+    img[src$=".jpg"] {
+      border: 2px solid #333;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    /* Small screens: stack vertically and reduce font size */
+    @media (max-width: 600px) {
+      .blog-section {
+        flex-direction: column;
+      }
+      .blog-post {
+        width: 100%;
+      
+      }
+      .blog-post h2 {
+        font-size: 1.2em;
+      }
+      .blog-post p {
+        font-size: 0.9em;
+      }
+    }
+
+    /* Portrait orientation: change background color */
+    @media (orientation: portrait) {
+      .blog-section {
+        background-color: lightyellow;
+      }
+    }
+    .post1{
+        background-color: lightblue;
+    }
+    .post2{
+        background-color:  burlywood;
+    }
+    .post3{
+        background-color: hotpink;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div class="blog-section">
+    <div class="blog-post post1">
+      <h2>Football Insights</h2>
+      <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmW20Fo7SpJeP1_nfiQkaxHNc_MH4RCFx1z0902Mfquw&s=10 width="150"height="150" class="football">
+      <p>Exploring the spirit of the game and beyond.</p>
+      <a href="https://example.com/football">Read More</a>
+    </div>
+
+    <div class="blog-post post2">
+      <h2>Café Culture</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-R5bvrDnm0D6d4z5dJw4tjEhDf_U8tVhkKfiTTLx6Aw&s=10"width="150"height="150">
+      <p>Dive into the world of espresso and frothy delights.</p>
+      <a href="http://example.com/cafe">Read More</a>
+    </div>
+
+    <div class="blog-post post3">
+      <h2>Travel and Tourism</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0ojG9nIRpsZeGHayJ2QrWt8foUDceoZ6mJcFEgnOqdg&s=10"width="150"height="150">
+      <p>Travel makes one modest. You see what a tiny place you occupy in the world.</p>
+      <a href="https://example.com/webdev">Read More</a>
+    </div>
+  </div>
+</body>
+</html>
